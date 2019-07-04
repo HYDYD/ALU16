@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 520.740 ns
+From           : dataselect
+To             : ALU16:inst|cout[9]
+From Clock     : --
+To Clock       : clk2
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 228.335 ns
+From           : ALU16:inst|cout[13]
+To             : SEG7_5[35]
+From Clock     : clk2
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 230.009 ns
+From           : viewselect
+To             : SEG7_5[35]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.099 ns
+From           : input[0]
+To             : latch_8:inst2|qout[0]
+From Clock     : --
+To Clock       : clk1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.93 MHz ( period = 517.351 ns )
+From           : ALU16:inst|cout[15]
+To             : ALU16:inst|cout[9]
+From Clock     : clk2
+To Clock       : clk2
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk3'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 144.34 MHz ( period = 6.928 ns )
+From           : dm:inst10|addr[2]
+To             : dm:inst10|dmem[0][13]
+From Clock     : clk3
+To Clock       : clk3
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

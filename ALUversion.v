@@ -1,0 +1,39 @@
+module ALUversion(a, b, cin, sum, cout);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+output sum, cout;
+	input a, b, cin;
+	wire sum, cout;
+	assign sum = a^b^cin;
+	assign cout = a&b + (a^b)&cin;
+endmodule 

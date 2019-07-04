@@ -1,0 +1,22 @@
+module disp_dec(hex,dispout);
+input[15:0] hex;
+output[39:0] dispout;
+reg [15:0] hex_;
+
+reg [19:0] dec;
+ 
+always@(hex)
+	begin
+	hex_[15:0]={1'b0,hex[14:0]};
+	dec[3:0]=hex_%10;
+	dec[7:4]=(hex_%100-dec[3:0])/10;
+	dec[11:8]=(hex_%1000-dec[3:0]-dec[7:4]*10)/100;
+	dec[15:12]=(hex_%10000-dec[3:0]-dec[7:4]*10-dec[11:8]*100)/1000;
+	dec[19:16]=(hex_%100000-dec[3:0]-dec[7:4]*10-dec[11:8]*100-dec[15:12]*1000)/10000;
+	end
+	
+	dual_hex ul(1'b0,dec,dispout);
+	/*input[15:0] hex,output dispout[7:0],output dispout[15:8],output dispout[23:16],output dispout[31:24],output dispout[39:32]*/
+endmodule 
+
+

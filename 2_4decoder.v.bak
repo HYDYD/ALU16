@@ -1,0 +1,6 @@
+module 2_4decoder(A1,A2,dout);
+input A1,A2;
+output dout;
+always @(A1,A2)
+	begin
+	case({A1,A2})
